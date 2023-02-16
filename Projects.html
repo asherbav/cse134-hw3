@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="description" content="HTML Web page for CSE 134B" >
+        <meta name="keywords" content="HTML" >
+        <meta name="author" content="" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title> Asher's CSE 134 Portfolio Page</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+        <style>
+            table, th, td {
+              border: 1px solid black;
+            }
+        </style>
+
+    </head>
+    
+    <!-- Content here-->
+    <body> 
+        <header>
+            <h1> Asher Av</h1>
+            <nav>
+                <a href="/index.html">Home</a>
+                <a href="/Projects.html"> Projects</a>
+                <a href="/Experiments.html"> Experiments</a>
+                <a href="/Contact.html"> Contact</a>
+            </nav>
+        </header>
+        <hr>
+
+        <main> 
+            
+            <section>
+            <h2>Works</h2>
+                <table id="projecttable">
+                    <caption>Some UCSD projects</caption>
+                    <tr>
+                      <th> Project</th>
+                      <th> Description</th>
+                      <th> Source</th>
+                    </tr>
+                    <tr>
+                      <td>hw1</td>
+                      <td> Exploring the Web Medium and First Steps in Web Development</td>
+                      <td><a href="https://github.com/asherbav/cse134-hw1">cse134-hw1</a></td>
+                    </tr>
+                    <tr>
+                      <td>hw2</td>
+                      <td> Plan Site and Semantic HTML Execution</td>
+                      <td><a href="https://github.com/asherbav/cse134-hw2">cse134-hw2</a></td>
+                    </tr>
+                  </table>
+
+                  <template id="projectrow">
+                    <tr>
+                      <td class="project"></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </template>
+
+            </section>
+
+        </main>
+
+        <hr>
+
+        <footer> 
+            <p>This page was made by Asher Av</p>
+        </footer>
+    </body>
+
+
+
+
+</html>
