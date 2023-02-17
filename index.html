@@ -10,11 +10,7 @@
         <title> Asher's CSE 134 Portfolio Page</title>
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 
-        <style>
-            table, th, td {
-              border: 1px solid black;
-            }
-        </style>
+        <link rel="stylesheet" href="/defaultstyle.css">
 
     </head>
     
@@ -23,51 +19,91 @@
         <header>
             <h1> Asher Av</h1>
             <nav>
-                <a href="/index.html">Home</a>
-                <a href="/Projects.html"> Projects</a>
-                <a href="/Experiments.html"> Experiments</a>
-                <a href="/Contact.html"> Contact</a>
+                <ul class="nav-ul">
+                    <li class="nav-li"><a class="active-link" href="/index.html">Home</a></li>
+                    <li class="nav-li"><a class="nav-link" href="/Projects.html"> Projects</a></li>
+                    <li class="nav-li"><a class="nav-link" href="/Contact.html"> Contact</a></li>
+                    <!-- <a class="nav-link" href="/index.html">Home</a>
+                    <a class="nav-link" href="/Projects.html"> Projects</a>
+                    <a class="nav-link" href="/Contact.html"> Contact</a> -->
+                </ul>
             </nav>
         </header>
-        <hr>
 
         <main> 
             
-            <section> 
-            <h2> About</h2>
-                <h3>Introduction</h3>
-                <p> Hi my name is <b>Asher</b> and this is my CSE 134b portfolio page</p>
-                <p> I am <em>currently</em> a student.</p>
-                <figure>
-                    <img src="/images/PoM1.png" alt="Picture of me" style="width:15%">
-                    <figcaption>Fig.1 - Here's a picture of me.</figcaption>
-                </figure> 
+            <section class="document-section"> 
+            
+                <h2> About Me</h2>
+                <section aria-label="Profile picture"> 
+                    <picture>
+                        <source
+                        srcset = "/images/PoM1_300.webp"
+                        type = "image/webp"
+                        height = "277"
+                        width = "234" 
+                        >
+                        <source
+                        srcset = "/images/PoM1.webp"
+                        type = "image/webp"
+                        height = "277"
+                        width = "234" 
+                        >
+                        <source
+                        srcset = "/images/PoM1_300.png"
+                        type = "image/webp"
+                        height = "277"
+                        width = "234" 
+                        >
+                        <source
+                        srcset = "/images/PoM1.png"
+                        type = "image/webp"
+                        height = "277"
+                        width = "234" 
+                        >
 
-                <details>
-                    <summary> Summary</summary>
-                    <ol>
-                        <li>Mega foodie</li>
-                        <li>Wikipedia enjoyer</li>
-                        <li>Nutrition geek</li>                        </ol>
-                 </details>
+                        <img src="/images/PoM1.png" alt="Picture of me" width="234" height="277" decoding="async" loading="lazy">
+                    </picture>
+                    </section> 
 
-                <h3> Education </h3>
-                    <p> Pursuing a B.S. in <strong>Computer Science</strong> at <a href="https://ucsd.edu">University of California, San Diego</a> </p>
-                    
-                <h3> Skills</h3>
-                    <ul> 
+                <section aria-label="Introduction">
+                    <h3>Introduction</h3>
+                    <p> Hi my name is <b>Asher</b> and this is my CSE 134b portfolio page</p>
+                
+                    <details>
+                        <summary> More</summary>
+                        <ul class = "sum-li">
+                            <li>Mega foodie</li>
+                            <li>Wikipedia enjoyer</li>
+                            <li>Nutrition geek</li>                        
+                        </ul>
+                     </details>
+                </section>
+                
+                <section aria-label="Education">
+                    <h3>Education</h3>
+                    <p> I am <em>currently</em> a student pursuing a B.S. in <strong>Computer Science</strong> at
+                         <a href="https://ucsd.edu">University of California, San Diego</a> 
+                    </p>
+
+                </section>
+
+
+                <section aria-label="skills">
+                    <h3> Skills</h3>
+                    <ul class="skills-ul"> 
                         <li>Python</li>
                         <li>Java</li>
                         <li>C</li>
                         <li>C++</li>
-                        <li>HTML</li>
+                        <li>HTML/CSS</li>
+                        <li>Docker/Podman</li>
                     </ul>
-                    
+                </section>
+                
             </section>
 
         </main>
-
-        <hr>
 
         <footer> 
             <p>This page was made by Asher Av</p>

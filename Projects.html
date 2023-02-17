@@ -10,11 +10,7 @@
         <title> Asher's CSE 134 Portfolio Page</title>
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 
-        <style>
-            table, th, td {
-              border: 1px solid black;
-            }
-        </style>
+        <link rel="stylesheet" href="/defaultstyle.css">
 
     </head>
     
@@ -23,20 +19,23 @@
         <header>
             <h1> Asher Av</h1>
             <nav>
-                <a href="/index.html">Home</a>
-                <a href="/Projects.html"> Projects</a>
-                <a href="/Experiments.html"> Experiments</a>
-                <a href="/Contact.html"> Contact</a>
-            </nav>
+              <ul class="nav-ul">
+                  <li class="nav-li"><a class="nav-link" href="/index.html">Home</a></li>
+                  <li class="nav-li"><a class="active-link" href="/Projects.html"> Projects</a></li>
+                  <li class="nav-li"><a class="nav-link" href="/Contact.html"> Contact</a></li>
+                  <!-- <a class="nav-link" href="/index.html">Home</a>
+                  <a class="nav-link" href="/Projects.html"> Projects</a>
+                  <a class="nav-link" href="/Contact.html"> Contact</a> -->
+              </ul>
+          </nav>
         </header>
-        <hr>
 
-        <main> 
+        <main class="works"> 
             
             <section>
             <h2>Works</h2>
                 <table id="projecttable">
-                    <caption>Some UCSD projects</caption>
+                    <caption>Table: Some of my UCSD projects</caption>
                     <tr>
                       <th> Project</th>
                       <th> Description</th>
@@ -45,12 +44,17 @@
                     <tr>
                       <td>hw1</td>
                       <td> Exploring the Web Medium and First Steps in Web Development</td>
-                      <td><a href="https://github.com/asherbav/cse134-hw1">cse134-hw1</a></td>
+                      <td><a href="https://github.com/asherbav/cse134-hw1">link</a></td>
                     </tr>
                     <tr>
                       <td>hw2</td>
                       <td> Plan Site and Semantic HTML Execution</td>
-                      <td><a href="https://github.com/asherbav/cse134-hw2">cse134-hw2</a></td>
+                      <td><a href="https://github.com/asherbav/cse134-hw2">link</a></td>
+                    </tr>
+                    <tr>
+                      <td>hw3</td>
+                      <td> Standards Based CSS Responsive Web Design</td>
+                      <td><a href="https://github.com/asherbav/cse134-hw3">link</a></td>
                     </tr>
                   </table>
 
@@ -66,7 +70,6 @@
 
         </main>
 
-        <hr>
 
         <footer> 
             <p>This page was made by Asher Av</p>
